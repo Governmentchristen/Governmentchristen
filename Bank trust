@@ -164,6 +164,63 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
+
+Documentation>Account and Transaction Information
+Account and Transaction Information
+Wells Fargo Gateway built this API following Open Banking Implementation Entity (OBIE) specifications whenever possible. Third Party Providers (TPP) who are building mobile and web applications for banking customers (Payment Service Users or PSUs) must follow the specifications in this guide. Only TPPs registered as an Account Information Service Provider (AISP) can access this API.
+
+The Account and Transaction Information API allows an (AISP) to register an intent to retrieve account information by creating account access consent IDs.
+
+Documentation>Account and Transaction Information
+Account and Transaction Information
+Wells Fargo Gateway built this API following Open Banking Implementation Entity (OBIE) specifications whenever possible. Third Party Providers (TPP) who are building mobile and web applications for banking customers (Payment Service Users or PSUs) must follow the specifications in this guide. Only TPPs registered as an Account Information Service Provider (AISP) can access this API.
+
+The Account and Transaction Information API allows an (AISP) to register an intent to retrieve account information by creating account access consent IDs.
+
+The Account and Transaction Information API enables you to
+Post consent IDs
+Retrieve consent IDs
+Delete consent IDs
+Retrieve accounts
+Retrieve accounts from the account ID
+Retrieve balances
+Retrieve transactions
+Retrieve statement IDs
+Retrieve a statement
+Retrieve statement transactions
+URIscode snippets section
+URIs code snippet
+Post consent IDs [POST]
+open-banking/v3.1/aisp/account-access-consents
+Retrieve consent IDs [GET]
+open-banking/v3.1/aisp/account-access-consents/{ConsentId}
+Delete consent IDs [DELETE]
+open-banking/v3.1/aisp/account-access-consents/{ConsentId}
+Retrieve accounts [GET]
+open-banking/v3.1/aisp/accounts
+Retrieve accounts from the account ID [GET]
+open-banking/v3.1/aisp/accounts/{AccountId}
+Retrieve balances [GET]
+open-banking/v3.1/aisp/accounts/{AccountId}/balances
+Retrieve transactions [GET]
+open-banking/v3.1/aisp/accounts/{AccountId}/transactions
+Retrieve statement IDs [GET]
+open-banking/v3.1/aisp/accounts/{AccountId}/statements
+Retrieve a statement [GET]
+open-banking/v3.1/aisp/accounts/{AccountId}/statements/{StatementId}
+Retrieve statement transactions [GET]
+open-banking/v3.1/aisp/accounts/{AccountId}/statements/{StatementId}/transactions
+The Account and Transaction Information API enables you to
+Post consent IDs
+Retrieve consent IDs
+Delete consent IDs
+Retrieve accounts
+Retrieve accounts from the account ID
+Retrieve balances
+Retrieve transactions
+Retrieve statement IDs
+Retrieve a statement
+Retrieve statement transactions
 module.exports = {
   development: {
     host: process.env.DATABASE_HOST,
@@ -181,3 +238,4 @@ module.exports = {
 };
 Work smarter
 Guidelines and policies to help you during your integration
+https://developer.wellsfargo.com/all-products
